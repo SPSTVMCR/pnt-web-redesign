@@ -152,7 +152,13 @@ body {
     border-color: white;
     color: white;
 }
-
+.div_button_login:hover {
+    background-color: red;
+    color: white;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
 .div_button_register {
     background-color: white;
     padding: 10px;
@@ -161,7 +167,13 @@ body {
     border-color: blue;
     color: blue;
 }
-
+.div_button_register:hover {
+    background-color: greenyellow;
+    color: black;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
 .leftcolumn {
     float: left;
     width: 74%;
