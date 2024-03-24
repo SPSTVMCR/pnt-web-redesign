@@ -206,3 +206,9 @@ body {
         padding: 0;
     }
 }
+.header_menu a {
+   text-decoration: none;
+}
+.footer_menu a {
+    text-decoration: none;
+ }
