@@ -5,16 +5,28 @@
 body {
     background-color: skyblue;
 }
-
+.drop {
+    animation: dropIn 1s ease forwards;
+    animation-delay: calc(var(--order) * 100ms);
+}
+@keyframes dropIn {
+    from {
+        transform: translateY(-100%);   
+    }
+    to {
+        transform: translateY(0);
+    }
+}
 .footer_container {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     padding: 10px;
+    padding-bottom: 4em;
     width: 100%;
     flex-direction: row;
     left: 0px;
-   
+    bottom: 0px;
 }
 .footer_logo img {
     width: 60px;
@@ -102,6 +114,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    width: clamp(300px, 100%, 2200px);
 }
 
 .header_logo img {
@@ -114,7 +127,8 @@ body {
 
 .header_text h1 {
     font-size: 15px;
-    color: white
+    color: white;
+
 }
 
 .logo_and_text_container {
@@ -151,6 +165,7 @@ body {
     border-width: 2px;
     border-color: white;
     color: white;
+    
 }
 .div_button_login:hover {
     background-color: red;

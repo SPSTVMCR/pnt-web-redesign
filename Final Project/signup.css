@@ -8,6 +8,18 @@ body {
     font-size: 14px;
     padding: 5px;
 }
+.drop {
+    animation: dropIn 1s ease forwards;
+    animation-delay: calc(var(--order) * 25ms);
+}
+@keyframes dropIn {
+    from {
+        transform: translateY(-100%);   
+    }
+    to {
+        transform: translateY(0);
+    }
+}
 .acrylic_grey
 
 /* Apply acrylic effect */

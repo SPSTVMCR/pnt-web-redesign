@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Đăng nhập</title>
     <link rel="stylesheet" href="login.css">
     <style>
         body {
@@ -13,7 +13,7 @@
     </style>
 </head>
 <body>
-    <div class="header_container acrylic_grey">
+    <div class="header_container acrylic_grey drop" style="--order: 1">
         <div class="logo_and_text_container">
             <div class="header_logo">
                 <img
@@ -32,13 +32,13 @@
             <a href="signup.html"><div class="div_button_register">Đăng kí</div></a>
         </div>
     </div>
-    <div class="form_container">
+    <div class="form_container drop" style="--order: 2">
         <form>
             <h1>Đăng nhập</h1>
-            <label for="username">Email</label>
-            <input type="text" id="username" name="username" placeholder="Username">
-            <label for="password">Mật khẩu</label>
-            <input type="password" id="password" name="password" placeholder="Password">
-            <input class="button_submit" type="submit" value="Đăng nhập">
+            <label class="drop" for="username" style="--order: 3">Email</label>
+            <input class="drop" type="text" id="username" name="username" placeholder="Username" style="--order: 4">
+            <label class="drop" for="password" style="--order: 5">Mật khẩu</label>
+            <input class="drop" type="password" id="password" name="password" placeholder="Password" style="--order: 6">
+            <input class="button_submit drop" type="submit" value="Đăng nhập" style="--order: 7">
         </form>
     </div>

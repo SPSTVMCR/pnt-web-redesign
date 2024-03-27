@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Đăng kí</title>
     <link rel="stylesheet" href="signup.css">
     <style>
         body {
@@ -13,7 +13,7 @@
     </style>
 </head>
 <body>
-    <div class="header_container acrylic_grey">
+    <div class="header_container acrylic_grey drop" style="--order: 1">
         <div class="logo_and_text_container">
             <div class="header_logo">
                 <img
@@ -30,20 +30,23 @@
             <a href="https://thcsphamngocthach.boards.net" target="_blank"><div class="div_button">Diễn đàn</div></a>
             <a href="login.html"><div class="div_button_login">Đăng nhập</div></a>
             <a href="signup.html"><div class="div_button_register">Đăng kí</div></a>
-              <!--Tab to edit-->
+              
             
         </div>
     </div>
-    <div class="form_container">
+    <div class="form_container drop" style="--order: 2">
         <form>
-            <h1>Sign up</h1>
-            <label for="username">Username</label>
-            <input type="text" id="username" name="username" placeholder="Username">
-            <label for="email">Email</label>
-            <input type ="email" id="email" name = "email" placeholder="Email">
-            <label for="password">Mật khẩu</label>
-            <input type="password" id="password" name="password" placeholder="Password">
-            <input type="password" id ="confirm_password" placeholder ="Confirm password"
-            <input class="button_submit" type="submit" value="Đăng ki">
+            <h1>Đăng kí</h1>
+            <label class="drop" for="username" style="--order: 3" >Username</label>
+            <input class="drop" type="text" id="username" name="username" placeholder="Username" style="--order: 4">
+            <label class="drop" for="email" style="--order: 5">Email</label>
+            <input class="drop" type ="email" id="email" name = "email" placeholder="Email" style="--order: 6">
+            <label class="drop" for="password" style="--order: 7">Mật khẩu</label>
+            <input class="drop" type="password" id="password" name="password" placeholder="Password" style="--order: 8">
+            <input class="drop" type="password" id ="confirm_password" placeholder ="Confirm password" style="--order: 9">
+            <input class="button_submit drop" type="submit" value="Đăng ki" style="--order: 10">
         </form>
     </div>
+
+</body>
+</html>
