@@ -20,6 +20,64 @@ body {
         transform: translateY(0);
     }
 }
+.footer_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    padding-bottom: 4em;
+    width: 100%;
+    flex-direction: row;
+    left: 0px;
+    bottom: 0px;
+}
+.footer_logo img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border-width: 2px;
+    border-color: white;
+}
+
+.footer_text {
+    width: 40%
+}
+
+.footer_text p {
+    font-size: 13px;
+    line-height: 20px;
+    padding: 10px;
+}
+
+.footer_text h1 {
+    font-size: 15px;
+    padding: 10px;
+}
+.information_list {
+    width: 30%;
+    margin-right: 100px;
+}
+
+.information_list h4 {
+    font-size: 15px;
+    padding: 10px;
+}
+
+.information_list ul li {
+    font-size: 13px;
+}
+
+.footer_menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 40%;
+    padding-bottom: 10px;
+    position: absolute;
+    top: 23%;
+    left: 35%;
+    
+}
 .acrylic_grey
 
 /* Apply acrylic effect */

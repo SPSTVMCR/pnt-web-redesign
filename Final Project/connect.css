@@ -1,16 +1,13 @@
 * {
     box-sizing: border-box;
 }
+
 body {
     background-color: skyblue;
 }
-.div_button {
-    font-size: 14px;
-    padding: 5px;
-}
 .drop {
     animation: dropIn 1s ease forwards;
-    animation-delay: calc(var(--order) * 50ms);
+    animation-delay: calc(var(--order) * 100ms);
 }
 @keyframes dropIn {
     from {
@@ -53,6 +50,26 @@ body {
     font-size: 15px;
     padding: 10px;
 }
+
+.acrylic
+
+/* Apply acrylic effect */
+    {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background: rgba(176, 177, 193, 0.5);
+
+}
+
+.acrylic_grey
+
+/* Apply acrylic effect */
+    {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background: rgba(255, 30, 0, 0.559);
+}
+
 .information_list {
     width: 30%;
     margin-right: 100px;
@@ -78,14 +95,12 @@ body {
     left: 35%;
     
 }
-.acrylic_grey
 
-/* Apply acrylic effect */
-    {
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    background: rgba(255, 30, 0, 0.559);
+.div_button {
+    font-size: 14px;
+    padding: 5px;
 }
+
 .div_button:hover {
     color: blue;
     transition-property: color;
@@ -99,6 +114,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    width: clamp(300px, 100%, 2200px);
 }
 
 .header_logo img {
@@ -111,7 +127,8 @@ body {
 
 .header_text h1 {
     font-size: 15px;
-    color: white
+    color: white;
+
 }
 
 .logo_and_text_container {
@@ -148,8 +165,8 @@ body {
     border-width: 2px;
     border-color: white;
     color: white;
+    
 }
-
 .div_button_login:hover {
     background-color: red;
     color: white;
@@ -157,7 +174,6 @@ body {
     transition-duration: 0.3s;
     cursor: pointer;
 }
-
 .div_button_register {
     background-color: white;
     padding: 10px;
@@ -173,96 +189,52 @@ body {
     transition-duration: 0.3s;
     cursor: pointer;
 }
-.header_menu a {
-    text-decoration: none;
- }
- .form_container {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     height: 100vh;
-     flex-direction: column;
-     background-color: none;
-    
- }
- .form_container h1 {
-     color: blue;
- }
- .form_container form {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     gap: 10px;
-     padding: 20px;
-     background-color: white;
-     border-radius: 10px;
-     box-shadow : 0 0 10px 0 black;
-     margin-top: 10px;
-     animation: rainbow 2.5s linear;
-	animation-iteration-count: infinite;
-     
- }
- @keyframes rainbow{
-    100%,0%{
-        box-shadow: 0 0 10px 0 rgb(255,0,0);
-    }
-    8%{
-        box-shadow:0 0 10px 0 rgb(255,127,0);
-    }
-    16%{
-        box-shadow:0 0 10px 0 rgb(255,255,0);
-    }
-    25%{
-        box-shadow:0 0 10px 0 rgb(127,255,0);
-    }
-    33%{
-        box-shadow:0 0 10px 0 rgb(0,255,0);
-    }
-    41%{
-        box-shadow:0 0 10px 0 rgb(0,255,127);
-    }
-    50%{
-        box-shadow:0 0 10px 0 rgb(0,255,255);
-    }
-    58%{
-        box-shadow:0 0 10px 0 rgb(0,127,255);
-    }
-    66%{
-        box-shadow:0 0 10px 0 rgb(0,0,255);
-    }
-    75%{
-        box-shadow:0 0 10px 0 rgb(127,0,255);
-    }
-    83%{
-        box-shadow:0 0 10px 0 rgb(255,0,255);
-    }
-    91%{
-        box-shadow:0 0 10px 0 rgb(255,0,127);
+.leftcolumn {
+    float: left;
+    width: 74%;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 0px;
+    margin-top: 20px;
+    margin-left: 0px;
+}
+
+.fakeimg {
+    width: 100%;
+    padding: 20px;
+}
+
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.row ::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+
+    .leftcolumn,
+    .rightcolumn {
+        width: 100%;
+        padding: 0;
     }
 }
- .form_container form input {
-     padding: 10px;
-     border-radius: 5px;
-     border: 1px solid blue;
- }
- .form_container form .button_submit {
-     background-color: blue;
-     color: white;
-     border: none;
-     padding: 10px;
-     border-radius: 10px;
-     cursor: pointer;
-     font-size: 15px;
-     border: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
- }
- .form_container form .button_submit:hover {
-     background-color: rgb(255, 0, 0);
-     transition-property: background-color;
-     transition-duration: 0.3s;
-     transition-timing-function: ease-in-out;
- }
- .form_container form label {
-    text-decoration: underline;
-    font-size: 15px;
-    font-weight: bold;
+.header_menu a {
+   text-decoration: none;
+}
+.footer_menu a {
+    text-decoration: none;
  }
